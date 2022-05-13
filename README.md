@@ -1,6 +1,6 @@
 # Labenu Music Awards
 
-### Documentação postman: 
+### Documentação postman: https://documenter.getpostman.com/view/19296396/UyxhonZD
 
 ### Descrição:
 
