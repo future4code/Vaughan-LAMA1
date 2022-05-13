@@ -5,7 +5,7 @@ import { Band } from "../model/Band";
 
 export class BandDatabase extends BaseDatabase {
 
-  private static TABLE_NAME = "Band_Lama";
+  private static TABLE_NAME = "Banda_Lama";
 
   public async createBand(
     id: string,

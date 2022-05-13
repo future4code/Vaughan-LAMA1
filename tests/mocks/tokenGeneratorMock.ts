@@ -1,6 +1,6 @@
 import * as jwt from "jsonwebtoken";
-import { UserRole } from "../../model/User";
-import { AuthenticationData } from "../../services/Authenticator";
+import { UserRole } from "../../src/model/User";
+import { AuthenticationData } from "../../src/services/Authenticator";
 
 export class TokenGeneratorMock {
     private static expiresIn: number = 1200;
