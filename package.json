@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node ./build/index.js",
     "dev": "ts-node-dev ./src/index.ts",
-    "test": "node ./node_modules/jest/bin/jest.js"
+    "test": "node ./node_modules/jest/bin/jest.js",
+    "migrations": "tsnd Migrations.ts"
+   
   },
   "repository": {
     "type": "git",
