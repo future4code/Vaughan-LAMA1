@@ -32,4 +32,3 @@ export interface AuthenticationData {
   role: string;
 }
 
-export default new TokenGenerator()
