@@ -1,6 +1,6 @@
 
 import { User } from "../model/User";
-import {BaseDatabase} from "./BaseDatabase";
+import { BaseDatabase } from "./BaseDatabase";
 import { Band } from "../model/Band";
 
 export class BandDatabase extends BaseDatabase {
@@ -12,15 +12,15 @@ export class BandDatabase extends BaseDatabase {
     name: string,
     music_genre: string,
     responsible: string,
-  
+
   ): Promise<void> {
     try {
       await BaseDatabase.connection()
         .insert({
           id,
           name,
-         music_genre,
-         responsible
+          music_genre,
+          responsible
         })
         .into(BandDatabase.TABLE_NAME);
     } catch (error: any) {
@@ -29,12 +29,24 @@ export class BandDatabase extends BaseDatabase {
   }
 
   public async getBandByEmail(email: string): Promise<Band> {
-    const result = await BaseDatabase.connection() 
+    const result = await BaseDatabase.connection()
       .select("*")
       .from(BandDatabase.TABLE_NAME)
       .where({ email });
 
     return Band.toUserModel(result[0]);
+  }
+
+  getBand = async (
+    id: string
+  ) => {
+    const post = await BaseDatabase.connection('Banda_Lama').select(
+      "id",
+      "name",
+      "music_genre",
+      "responsible"
+    ).where({ id })
+    return post[0]
   }
 
 }
