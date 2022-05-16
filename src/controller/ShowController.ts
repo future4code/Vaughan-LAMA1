@@ -33,7 +33,7 @@ export class ShowController {
 
         } catch (error) {
             const err = error as BaseError
-            res.status(400).send({ error: err.message })
+            res.status(422).send({ error: err.message })
 
         }
     }
