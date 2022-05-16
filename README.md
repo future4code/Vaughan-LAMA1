@@ -5,6 +5,8 @@
 ### Descrição:
 
 *Labenu Musical Awards*, um festival  com várias bandas famosas para a formatura da turma e, no final,  pode eleger a banda que mais gostaram! Permite o gerenciamento completo desses shows.
+Utilizamos o LiveShare no VsCode para fazer todo o projeto.
+Para verifica-lo deve-se baixar o arquivo atraves do git clone e instalar as dependencias atraves do npm i 
 
 ### Funcionalidades:
 
